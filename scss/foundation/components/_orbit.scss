@@ -86,9 +86,9 @@ $preloader-class: "preloader" !default;
     height: 40px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    #{$default-float}: 50%;
     margin-top: -20px;
-    margin-left: -20px;
+    #{$default-float}-left: -20px;
     border: solid 3px;
     border-color: #555 #fff;
     @include radius(1000px);
@@ -130,10 +130,10 @@ $preloader-class: "preloader" !default;
         position: absolute;
         top: 0;
         width: 100%;
-        margin-left: 100%;
+        margin-#{$default-float}: 100%;
 
         &:first-child {
-          margin-left: 0%;
+          margin-#{$default-float}: 0%;
         }
 
         .orbit-caption {
